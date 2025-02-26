@@ -19,7 +19,7 @@
         <h1 id="heading">My document file</h1>
     </header>
     <main>
-        <h1>my wosome dom de baba</h1>
+        <h1 id="title">my wosome dom de baba</h1>
         <ul>
             <li class="same_tag">My Name</li>
             <li class="same_tag">MY Father Name</li>
@@ -27,9 +27,9 @@
             <li>My Sister Name</li>
         </ul>
 
-        <section>
+        <section id="styel_section">
             <ul>
-                <li class="frouts">appple</li>
+                <li id="apple">appple</li>
                 <li class="frouts">orange</li>
                 <li class="frouts">jackfrut</li>
             </ul>
@@ -53,7 +53,16 @@
         for(let frout of frouts){
             console.log(frout.innerText)
         }
-    
+    const apple = document.getElementById("apple");
+    apple.setAttribute("title", "Amk sobai like kore")
+
+    // document.getElementById("title").style.color = "red"
+
+    const title =  document.getElementById("title");
+    title.style.backgroundColor = "black";
+    title.style.color = "white";
+    title.setAttribute("title", "I Am Title")
+  
     </script>
 </body>
 </html>
