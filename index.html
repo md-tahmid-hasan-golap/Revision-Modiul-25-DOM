@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revision DOM</title>
+
+    <link rel="stylesheet" href="./styels/styel.css">
+
+    <style>
+        li{
+            color: blueviolet;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <header>
+        <h1>My document file</h1>
+    </header>
+    <main>
+        <h1>my wosome dom de baba</h1>
+        <ul>
+            <li>My Name</li>
+            <li>MY Father Name</li>
+            <li>My Mother Name</li>
+            <li>My Sister Name</li>
+        </ul>
+    </main>
+
+    <script src="./js/dom.js"></script>
+
+    <script>
+    const liCollaction = document.getElementsByTagName("li");
+    for(let li of liCollaction){
+        console.log(li.innerText)
+    }
+    const headingCollaction = document.getElementsByTagName("h1");
+    for(let head of headingCollaction){
+        console.log(head.innerText)
+    }
+    </script>
 </body>
 </html>
