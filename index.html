@@ -19,50 +19,19 @@
         <h1 id="heading">My document file</h1>
     </header>
     <main>
-        <h1 id="title">my wosome dom de baba</h1>
-        <ul>
-            <li class="same_tag">My Name</li>
-            <li class="same_tag">MY Father Name</li>
-            <li class="same_tag">My Mother Name</li>
-            <li>My Sister Name</li>
-        </ul>
-
-        <section id="styel_section">
-            <ul>
-                <li id="apple">appple</li>
-                <li class="frouts">orange</li>
-                <li class="frouts">jackfrut</li>
-            </ul>
-        </section>
+   <section id="main_section">
+    <ul>
+        <li>Golap</li>
+        <li>Raj</li>
+        <li>Tahmid</li>
+    </ul>
+   </section>
     </main>
 
     <script src="./js/dom.js"></script>
 
     <script>
-        const heading = document.getElementById("heading").innerHTML = "golap raj";
-        console.log(heading)
-        document.getElementById("heading").addEventListener("click", function(){
-            document.body.style.backgroundColor = "yellow"
-        })
-        
-        const sameTag = document.getElementsByClassName("same_tag");
-        for (let same of sameTag){
-            console.log(same)
-        }
-        const frouts = document.getElementsByClassName("frouts");
-        for(let frout of frouts){
-            console.log(frout.innerText)
-        }
-    const apple = document.getElementById("apple");
-    apple.setAttribute("title", "Amk sobai like kore")
-
-    // document.getElementById("title").style.color = "red"
-
-    const title =  document.getElementById("title");
-    title.style.backgroundColor = "black";
-    title.style.color = "white";
-    title.setAttribute("title", "I Am Title")
-  
+         
     </script>
 </body>
 </html>
